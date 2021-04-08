@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery test</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" th:src="@{/src/jqueryGetWhenLoad.js}"></script>
+    <script type="text/javascript" th:src="@{/src/jqueryNewUser.js}"></script>
+</head>
+<body>
+    <h5>Add User</h5>
+    <form id="newUser" >
+        <label>Email</label>
+        <input type="text" name="email" placeholder="Input your email"/><br/>
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Input your password"/><br/>
+        <label>Firstname</label>
+        <input type="text" name="firstName" placeholder="Input your firstname"/><br/>
+        <label>Lastname</label>
+        <input type="text" name="lastName" placeholder="Input your lastname"/><br/>
+        <label>Roles</label>
+        <div>
+            <label>Select roles:</label>
+            <select name="roles" multiple>
+                <option value="0">0</option>
+                <option value="1">1</option>
+            </select>
+        </div>
+        <button type="button" id="testButton">Submit</button>
+    </form>
+</body>
+</html>
